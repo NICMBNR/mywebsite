@@ -6,7 +6,7 @@
         async function fetchData() {
             const apiKey = 'AIzaSyDae1XHQdZuSs7pMIm78qG9Lm3Yjc52a9A';
             const spreadsheetId = '1WdoZ6Bl7LeYVZno_U_yF8B5xGh4m2Jq5VXKvkMZWjW4';
-            const range = 'Sheet1!A1:C20'; // Adjust the range as needed
+            const range = 'Sheet1!A2:C20'; // Adjust the range as needed
 
             const response = await fetch(`https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${range}?key=${apiKey}`);
             const data = await response.json();
